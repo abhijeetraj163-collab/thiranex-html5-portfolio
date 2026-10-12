@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Abhijeet Kumar's portfolio showcasing skills, projects, and learning journey in software development."
+  >
+
+  <title>Abhijeet Kumar | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="Abhijeet Kumar home">
+        AK<span>.</span>
+      </a>
+
+      
+<ul class="nav-links">
+  <li><a href="index.html" aria-current="page">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+      <h1 id="hero-title">
+        Hi, I'm <span>Abhijeet Kumar</span>
+      </h1>
+
+      <h2>Aspiring Software Engineer</h2>
+
+      <p class="hero-description">
+        I'm a Computer Science student learning to build useful,
+        accessible, and user-friendly web experiences.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button" href="projects.html">View My Projects</a>
+<a class="button button-outline" href="contact.html">Contact Me</a>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <p class="eyebrow">GET TO KNOW ME</p>
+      <h2 id="about-title">About Me</h2>
+
+      <article class="about-card">
+        <h3>My Learning Journey</h3>
+        <p>
+          I am pursuing a B.Tech in Computer Science and Engineering
+          at Tulas University. I am developing my programming skills
+          and learning how to create practical software projects.
+        </p>
+        <p>
+          My current interests include web development, problem-solving,
+          and exploring new technologies.
+        </p>
+      </article>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <p class="eyebrow">WHAT I'M LEARNING</p>
+      <h2 id="skills-title">My Skills</h2>
+
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>C / C++</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <p class="eyebrow">MY WORK</p>
+      <h2 id="projects-title">Featured Projects</h2>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>FitZone Gym</h3>
+          <p>
+            A gym website concept built to present fitness services
+            and help visitors get in touch.
+          </p>
+          <span class="project-tag">HTML · CSS</span>
+        </article>
+
+        <article class="project-card">
+          <h3>Bright Future Coaching</h3>
+          <p>
+            A coaching website concept with course information,
+            faculty details, and a contact section.
+          </p>
+          <span class="project-tag">HTML · CSS · JavaScript</span>
+        </article>
+
+        <article class="project-card">
+          <h3>AI Student OS</h3>
+          <p>
+            A student productivity application concept for managing
+            tasks, study plans, and academic goals.
+          </p>
+          <span class="project-tag">React · JavaScript</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2 id="contact-title">Contact Me</h2>
+
+      <p class="contact-intro">
+        Have a project idea or want to connect? Send me a message.
+      </p>
+
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="visitor-name">Your name</label>
+          <input
+            id="visitor-name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="visitor-email">Your email</label>
+          <input
+            id="visitor-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="visitor-message">Your message</label>
+          <textarea
+            id="visitor-message"
+            name="message"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+
+        <button class="button" type="submit">Send Message</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      &copy; <span id="current-year"></span> Abhijeet Kumar.
+      Built with HTML5, CSS, and JavaScript.
+    </p>
+  </footer>
+</body>
+</html>

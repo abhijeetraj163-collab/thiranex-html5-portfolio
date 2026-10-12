@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Abhijeet Kumar about web development and software projects.">
+  <title>Contact | Abhijeet Kumar</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html">AK<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="section" aria-labelledby="contact-title">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h1 id="contact-title">Contact Me</h1>
+
+      <p class="contact-intro">
+        Have a question or project idea? Fill in the form below.
+      </p>
+
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="visitor-name">Your name</label>
+          <input
+            id="visitor-name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="visitor-email">Your email</label>
+          <input
+            id="visitor-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="visitor-message">Your message</label>
+          <textarea
+            id="visitor-message"
+            name="message"
+            rows="6"
+            required
+          ></textarea>
+        </div>
+
+        <button class="button" type="submit">Send Message</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="current-year"></span> Abhijeet Kumar.</p>
+  </footer>
+</body>
+</html>
